@@ -3,33 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto redes sociais</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+    <title>Media query</title>
+    <style>
+        /*Declarações gerais */
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #050823;
+    padding: 10px;
+}
+
+        /*Declarações retrato*/
+        @media screen and (orientation: portrait) {
+            body {
     
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
+
+        }
+            
+        
+
+        /*Declarações de paisagem*/
+
+        @media screen and (orientation: landscape) {
+            body { 
     
-</head>
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
+
+}
+
+    </style>
 <body>
-    <main>
-        <section id="telefone">
-
-            <iframe src="home.html" frameborder="0" name="tela" id="tela">
-                Seu navegador não é compativel com isso.
-            </iframe>
-
-        </section>
-
-        <section id="redes-sociais">
-            <a href="home.html" target="tela"> <img src="imagens/logo-home.jpg" alt="logo inicio"></a><br>
-            <a href="youtube.html" target="tela"> <img src="imagens/logo-youtube.jpg" alt="logo youtube"></a><br>
-            <a href="github.html" target="tela"> <img src="imagens/logo-github.jpg" alt="Github"></a> <br>
-            <a href="insta.html" target="tela"> <img src="imagens/logo-instagram.jpg" alt="Instagram"></a> <br>
-            <a href="twi.html" target="tela"><img src="imagens/logo-twitter.jpg" alt="Twitter"></a> <br>
-            <a href="face.html" target="tela"><img src="imagens/logo-facebook.jpg" alt="Facebook"></a> <br>
-
-
-        </section>
-    </main>
-    
+    <h1>Mude a orientação do seu dispositivo</h1>
 </body>
 </html>
