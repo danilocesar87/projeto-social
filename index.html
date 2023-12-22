@@ -4,53 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
-    <style>
-        /*Declarações gerais */
-        * {
-    margin: 0px;
-    padding: 0px;
-}
-
-html, body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-h1 {
-    color: white;
-    text-shadow: 2px 2px 0px #050823;
-    padding: 10px;
-}
-
-        /*Declarações retrato*/
-        @media screen and (orientation: portrait) {
-            body {
-    
-    background-image: url(imagens/cev-portrait.jpg);
-    background-position: center bottom;
-}
-
-        }
-            
-        
-
-        /*Declarações de paisagem*/
-
-        @media screen and (orientation: landscape) {
-            body { 
-    
-    background-image: url(imagens/cev-landscape.jpg);
-    background-position: left bottom;
-}
-
-}
-
-    </style>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
 <body>
-    <h1>Mude a orientação do seu dispositivo</h1>
+    <main>
+        <h1>TESTANDO O MEDIA QUERY</h1>
+        <img id="phone" src="imagens/icon-phone.png" alt="">
+        <img id="tablet" src="imagens/icon-tablet.png" alt="">
+        <img id="print" src="imagens/icon-print.png" alt="">
+        <img id="pc" src="imagens/icon-pc.png" alt="">
+        <img id="tv" src="imagens/icon-tv.png" alt="">
+
+    </main>
+    
 </body>
 </html>
