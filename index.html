@@ -3,220 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Viagens</title>
-    <!--Projeto iniciado 09/12/2023 com wireframe e 16/12/2023 no Visual code-->
-    <style>
+    <title>Media Query</title>
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
 
-         * {
-            margin: 0px;
-            padding: 0px; }
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 
-            section {
-                width: 500px;
-                background-color: aqua;
-                margin: auto;
-                
-            }
-            
-
- section > img {
-      
-    width: 10%;
     
-    display: block;
    
- }
-
-span {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  background-color: chartreuse;
-  width: 300px;
-}
-
-div{
-            width: 800px;
-            height: 400px;
-            background-image: url(foto2.jpg);
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position: bottom right;
-           
-            margin: auto
-            
-           
-           
-         }
-
-/*  DEVICES BREAKPOINTS
-    Telas pequenas: até 600px
-    Celulares: 600px até 768px
-    Tablets: 768px até 992px
-    Notebooks: 992px até 1200px
-    Grandes telas: acima de 1200px
-*/
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    section.coluna {
-        flex: 1 1 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    section.coluna {
-        flex: 1 1 25%;
-    }
-}
-body {
-    background-color: rgba(229, 253, 253, 0.952);
-}
-
-header, h2 {
-    text-align: center;
-}
-
-article {
-    width: 300px;
-    height: 319px;
-    background-color: chartreuse;
-    display: inline-block;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    
-}
-
-form {
-    display: inline-block;
-    width: 50px;
-}
-
-#foto {
-    background-color: blueviolet;
-    display: inline-block;
-   
-}
-
-p {
-    display: inline-block;
-    width: 400px;
-}
-
-article img {
-    
-    width: 300px;
-    height: 300px;
-    
-}
-
-main {
-    background-color: cadetblue;
-}
-
-a:hover {
-    background-color: cornflowerblue;
-    text-decoration: none;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    
-}
-       
-    </style>
 </head>
 <body>
 
-    
-         
+   
     
 
     <header>
-        <h1>MINHAS VIAGENS</h1>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
 
-        <nav>
-            <a href="rio.html">Rio de janeiro |</a>
-            <a href="#">Link 2 |</a>
-            <a href="#">Link 3 |</a>
-            <a href="#">Link 4 |</a>
-        </nav>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2 </a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+
+
     </header>
-    <h2>Melhores Viagens</h2>
-   
-              
-        
-            
-                <main>
-                    <article>
-                        <span>Rio de janeiro</span>
-                        <img src="foto10.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Capitolio</span>
-                        <img src="foto12.jpg" alt="">
-                    </article>
-                    <article>
-                        <span>Florianopolis</span>
-                       <img src="foto1.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Rio de janeiro</span>
-                        <img src="foto10.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span><a href="index.html">Capitolio clique e veja mais fotos</span>
-                        <img src="foto12.jpg" alt=""> </a>
-                    </article>
-                    <article>
-                        <span>Florianopolis</span>
-                       <img src="foto1.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Rio de janeiro</span>
-                        <img src="foto10.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Capitolio</span>
-                        <img src="foto12.jpg" alt="">
-                    </article>
-                    <article>
-                        <span>Florianopolis</span>
-                       <img src="foto1.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Rio de janeiro</span>
-                        <img src="foto10.jpg" alt="">
-                    
-                    </article>
-                    <article>
-                        <span>Capitolio</span>
-                        <img src="foto12.jpg" alt="">
-                    </article>
-                    <article>
-                        <span>Florianopolis</span>
-                       <img src="foto1.jpg" alt="">
-                    
-                    </article>
-                </main>
-              
-           
-                   
-                 
 
-         
-            
+    <main>
+        <article>
+            <h2>Testando Media query</h2>
+            <p> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatum vitae consequatur odit, maiores temporibus, ut laudantium quia dolores velit, aliquid accusamus! Harum saepe ullam hic quas sit eveniet. Aspernatur!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatum vitae consequatur odit, maiores temporibus, ut laudantium quia dolores velit, aliquid accusamus! Harum saepe ullam hic quas sit eveniet. Aspernatur!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatum vitae consequatur odit, maiores temporibus, ut laudantium quia dolores velit, aliquid accusamus! Harum saepe ullam hic quas sit eveniet. Aspernatur!
+            </p>
 
 
+        </article>
     </main>
 
-    <footer>
-        <p>Site produzido por Danilo César</p>
-    </footer>
-    
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block')
+            {
+            itens.style.display='none'
+            } else {
+            itens.style.display= 'block' }
+        }
+
+    </script>
+
 </body>
 </html>
